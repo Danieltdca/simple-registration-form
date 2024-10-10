@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Greetings, {{ username }}</h1>
+        <p>"A wizard is never late, nor is he early, {{ username }}. They arrive precisely when they mean to. Welcome to your dashboard."</p>
+        <a href="{{ url_for('logout')}}" class="btn btn-logout">Farwell, for now!</a>
+    </div>
+{% endblock body %}
+    
